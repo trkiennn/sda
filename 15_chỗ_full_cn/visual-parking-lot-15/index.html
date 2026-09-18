@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visual Parking Lot</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="anims.css" title="anims" />
+  </head>
+  <body>
+    <div id="gui">
+      <input id="show-spaces-button" type="button" value="Show Spaces Status"></input>
+      <input id="show-intersections-button" type="button" value="Show Intersection Areas"></input>
+      <input id="show-paths-button" type="button" value="Show Path Lines"></input>
+      <br><br>
+      <input id="pause-button" type="button" value="Dung mo phong"></input>
+      <input id="manual-in-button" type="button" value="Cho xe vao"></input>
+      <input id="manual-out-button" type="button" value="Cho xe ra"></input>
+      <p class="infotext">Click on a car to see more about what where it's trying to go.</p>
+      <p class="infotext">Bai do 15 cho (3 hang x 5 o), 1 o danh cho xe khuyet tat o goc tren-trai.</p>
+    </div>
+    <div id="wrapper">
+      <div id="parking-lot">
+        <div id="lot-overlay">
+          <div id="spaces"></div>
+          <div id="intersections"></div>
+        </div>
+      </div>
+      <footer>
+        <div>
+          <dl id="stats-wrapper">
+            <dt>Cars which have entered the lot: </dt>
+            <dd id="car-counter">0</dd>
+            <dt>Cars currently parked: </dt>
+            <dd id="parked-counter">0</dd>
+            <dt>Cars which have left the lot: </dt>
+            <dd id="left-counter">0</dd>
+          </dl>
+        </div>
+        <div>
+          <a href="./docs/index.html">Check out the docs for this simulation.</a>
+        </div>
+      </footer>
+    </div>
+    <script src="scripts/loop.mjs" type="module"></script>
+  </body>
+</html>

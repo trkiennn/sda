@@ -1,0 +1,127 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0;
+}
+
+#wrapper {
+    margin: 1em;
+}
+
+#parking-lot {
+    position: relative;
+    background-image: url(img/parkinglot.jpg);
+    width: 906px;
+    height: 1020px;
+}
+
+#lot-overlay {
+    position: absolute;
+    width: 906px;
+    height: 1020px;
+    pointer-events: none;
+}
+
+.path-line {
+    position: absolute;
+    content: '';
+    background-color: blueviolet;
+}
+
+.space {
+    position: absolute;
+    opacity: 50%;
+    background-color: grey;
+    pointer-events: all;
+}
+
+.intersection > div {
+    position: absolute;
+    opacity: 25%;
+}
+
+.car-wrapper {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    pointer-events: none;
+}
+
+/* Overlay Elements */
+.overlay-wrapper {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+.show-overlay-children .overlay-el {
+    display: initial;
+}
+.overlay-el {
+    display: none;
+}
+.focused .overlay-el {
+    display: initial;
+}
+.visible {
+    display: initial;
+}
+.hidden {
+    display: none;
+}
+
+.area-box {
+    position: absolute;
+    content: '';
+    opacity: 50%;
+}
+
+.maneuver-box {
+    position: absolute;
+    opacity: 25%;
+}
+
+.car {
+    position: absolute;
+    width: 182px;
+    height: 182px;
+}
+
+.car > img {
+    position: relative;
+    top: 46px;
+    width: 182px;
+    height: 90px;
+    pointer-events: all;
+}
+
+/* Footer - This covers cars leaving the lot. */
+footer {
+    position: relative;
+    width: 1385px;
+    height: 225px;
+    background-color: white;
+    z-index: 1000;
+}
+
+.infotext {
+    margin: 0;
+    padding-top: 0.5em;
+    font-size: 14px;
+}
+
+#gui {
+    margin-top: 0.5em;
+    margin-left: 1em;
+}
+
+#stats-wrapper {
+    margin: 0;
+}
+#stats-wrapper > dt {
+    display: inline-block;
+}
+#stats-wrapper > dd {
+    display: inline-block;
+    margin: 0;
+    padding-top: .5em;
+    padding-right: 3em;
+}
